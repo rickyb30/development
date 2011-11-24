@@ -1,0 +1,10 @@
+<h1>Hello World!</h1>
+<p>
+It is <%= @time %>
+<% @files = Dir.glob('*') %>
+<% for file in @files %>
+	filename is <%= file %> <br>
+<% end %>
+<% animals = %w( ant bee cat dog hen ) %>
+<%= animals.each {|animal| puts animal} %>
+</p>
